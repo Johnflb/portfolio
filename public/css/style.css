@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Mina');
+
+
+
+body {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.mina {
+  font-family: 'Mina', sans-serif;
+
+}
+
+header {
+  background-image: url("../img/home.jpg") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  /* height: 600px !important; */
+  padding-top: 20px;
+}
+
+.uppercase {
+    text-transform: uppercase !important;
+}
+
+.colo-white {
+  color: white;
+}
+
+nav {
+  display: flex !important;
+  margin: 0 140px !important;
+}
+
+.menu {
+  display: none !important;
+}
+
+.logo-img {
+  width: 100px;
+}
+
+nav ul {
+  display: flex !important;
+  list-style: none !important;
+  padding: 0 !important;
+  height: 0 !important;
+}
+
+nav ul li a {
+  margin: 0 8px !important;
+  padding: 5px 0 !important;
+  text-decoration: none !important;
+  color: white !important;
+  letter-spacing: 3px !important;
+ }
+
+.hover:hover {
+  border-top: 1px solid white !important;
+  border-bottom: 1px solid white !important;
+}
+
+body > section > div > h1, body > section > div > h3 {
+  text-align: center;
+  padding-top: 35px;
+}
+
+section > div > p {
+  text-align: center !important;
+  margin-top: 20px !important;
+  color: white !important;
+}
+
+div > .intro {
+  font-size: 3em !important;
+}
+
+.button {
+  text-align: center !important;
+}
+
+body > section > div {
+  width: 90%;
+  margin: auto;
+}
+
+.col-3 {
+  text-align: center;
+}
+
+section > div > h1 {
+  color: #07b8bf;
+}
+
+.icon {
+  font-size: 3em;
+}
+
+button {
+  background-color: #07b8bf !important;
+  text-transform: uppercase !important;
+  color: white !important;
+  letter-spacing: 2px !important;
+  border: 0 !important;
+  padding: 20px !important;
+  margin: 50px 0 100px 0 !important;
+  font-size: 17px !important;
+  font-weight: 400 !important;
+}
+
+.onButton {
+  padding-left: 10px;
+}
+
+button:hover {
+  background-color: #06abb2 !important;
+}
+
+.projets {
+  background-color: #f2f2f2;
+}
+
+.arrakis {
+  background-image: url("../img/arrakis.jpg");
+  background-size: cover;
+  padding: 20px;
+  position: relative;
+}
+
+.arrakis::before, 
+.timecrafter::before, 
+.dragonfly::before {
+  background-color: rgba(0, 0, 0, 0.5);
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.timecrafter {
+  background-image: url("../img/timecrafters.jpg");
+  background-size: cover;
+  padding: 20px;
+  position: relative;
+}
+
+.arrakis:hover::before,
+.timecrafter:hover::before, 
+.dragonfly:hover::before {
+  background-color: rgba(0, 0, 0, 0.65);
+  content: "En savoir plus";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 85%;
+}
+
+.dragonfly {
+  background-image: url("../img/dragonfly.jpg");
+  background-size: cover;
+  padding: 20px;
+  position: relative;
+}
+
+.png {
+  position: relative;
+  z-index: 1;
+}
+
+.activite {
+  position: relative;
+  z-index: 1;
+}
+
+.contact {
+  background-color: #363f45;
+}
+
+.spacing {
+  letter-spacing: 3px;
+}
+
+img {
+  width: 50%;
+  height: auto;
+}
+
+.clients {
+  width: 80%;
+  margin: auto;
+}
+
+@media all and (max-width: 900px){
+  nav ul {
+    display: none !important;
+  }
+
+  header nav {
+    margin: 0px !important;
+    padding-left: 20px !important;
+  }
+
+  .menu {
+    display: flex !important;
+    flex-direction: column !important;
+    margin-right: 25px !important;
+    height: 30px !important;
+    width: 35px !important;
+}
+
+  .barre {
+    height: 2px !important;
+    width: 25px !important;
+    background-color: rgba(255, 255, 255, 0.473) !important;
+    margin: 2px 0 !important;
+  }
+  nav {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+} 

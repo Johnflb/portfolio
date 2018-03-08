@@ -5,33 +5,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../public/css/style.css">
   <title>Portfolio</title>
 </head>
 
 <body>
 
   <!-- header -->
-  <header>
+  <header id="header">
     <!-- navbar -->
     <nav>
-      <div>
-        <img src="../public/img/" alt="">
+      <div class="logo">
+        <a href="" title="Home">
+          <img src="../public/img/logo.png" alt="logo société" class="logo-img">
+        </a>
       </div>
 
-      <ul>
+      <ul class="uppercase mt-2">
         <li>
-          <a href="">Skills</a>
+          <a href="" class="hover">Services</a>
         </li>
         <li>
-          <a href="">Galerie</a>
+          <a href="" class="hover">Clients</a>
         </li>
         <li>
-          <a href="">Contact</a>
+          <a href="" class="hover">À Propos</a>
         </li>
         <li>
-          <a href="">Suivez-nous</a>
+          <a href="" class="hover">Contact</a>
+        </li>
+        <li>
+          <a href="" title="Anglais">En</a>
         </li>
       </ul>
+      <div class="menu">
+        <div class="barre"></div>
+        <div class="barre"></div>
+        <div class="barre"></div>
+      </div>
     </nav>
     <!-- fin de la nav -->
 
@@ -39,64 +51,236 @@
     <section id="baniere">
       <!-- texte de présentation -->
       <div>
-        <h1>
-          Bienvenue
+        <p class="intro">
+          Nous conçevons des sites internet
+          <em>sur mesure</em>,
           <br>
-
-        </h1>
+          <em>compatibles</em> avec mobiles & tablettes,
+          <br>en utilisant les nouvelles technologies.
+        </p>
       </div>
 
       <!-- bouton -->
-      <div>
+      <div class="button">
         <button type="button">
-          Explorez
+          <i class="fab fa-youtube"></i>
+          <span class="onButton">Voir la vidéo</span>
         </button>
       </div>
     </section>
-
   </header>
-  <!-- fin header -->
+  <!-- Fin header -->
 
-  <!-- skills -->
+  <!-- Services -->
   <section>
-
-  </section>
-
-  <!-- galerie -->
-  <section>
-
-  </section>
-
-  <!-- contact -->
-  <section>
-
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <!-- image -->
     <div>
-      <img src="../public/img/" alt="">
-    </div>
-
-    <!-- adresse de contact -->
-    <div>
-
-    </div>
-
-    <div>
-      <!-- mentions legales -->
-      <div>
-
+      <h1 class="mina font-italic">Notre expertise à votre service</h1>
+      <h3>Du design au développement, de la version mobile au référencement, Netpom se charge de vous proposer un service sur-mesure.</h3>
+      <div class="row mt-5 mb-2">
+        <div class="col-3">
+          <i class=" fas fa-pencil-alt icon mb-2"></i>
+          <h4>Image de marque</h4>
+          <p>
+            Logo
+            <br>Identité visuelle
+            <br>Papeterie
+          </p>
+        </div>
+        <div class="col-3">
+          <i class="fas fa-mobile-alt icon mb-2"></i>
+          <i class="fas fa-laptop  icon mb-2"></i>
+          <h4>Web et mobile</h4>
+          <p>Web-design / Design d'app
+            <br>Mobile friendly
+            <br>E-commerce
+          </p>
+        </div>
+        <div class="col-3">
+          <i class="fas fa-search icon mb-2"></i>
+          <h4>Optimisation</h4>
+          <p>
+            Référencement
+            <br>Réseaux sociaux
+            <br>Taux de conversion
+          </p>
+        </div>
+        <div class="col-3">
+          <i class="far fa-lightbulb icon mb-2"></i>
+          <h4>Audit</h4>
+          <p>
+            Étude concurentielle
+            <br>Ergonomie
+            <br>Stratégie
+          </p>
+        </div>
       </div>
-
-      <!-- reseau sociaux -->
-      <div>
-
+      <!-- bouton -->
+      <div class="button">
+        <button type="button">
+          <i class="fas fa-angle-right"></i>
+          <span class="onButton">Découvrez nos services</span>
+        </button>
       </div>
     </div>
-  </footer>
+  </section>
 
+  <!-- Projets -->
+  <section class="projets">
+    <div>
+      <h1>Derniers projets</h1>
+      <h3>Une sélection des derniers clients pour lesquels nous avons travaillé</h3>
+      <div class="row mt-5 mb-2">
+        <div class="col-4">
+          <div class="arrakis text-center">
+            <img src="../public/img/arrakis.png" alt="arrakis" class="png pt-3" width="50%">
+            <p class="uppercase colo-white activite pt-4 pb-5 spacing">
+              Distributeur
+            </p>
+          </div>
+        </div>
+        <div class="col-4 ">
+          <div class="timecrafter text-center">
+            <img src="../public/img/timecrafters.png" alt="timecrafter" class="png pt-3" width="50%">
+            <p class="uppercase colo-white activite pt-4 pb-5 spacing">
+              Salon de l'horlogerie
+            </p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="dragonfly text-center">
+            <img src="../public/img/dragonfly.png" alt="dragonfly" class="png pt-3" width="50%">
+            <p class="uppercase colo-white activite pt-4 pb-5 spacing">
+              Ressources humaines
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="button">
+        <button type="button">
+          <i class="fas fa-angle-right"></i>
+          <span class="onButton">Voir l'ensemble des projets</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact">
+    <div>
+      <h1 class="colo-white">Collaborons ensemble pour concrétiser vos idées !</h1>
+      <form>
+
+      </form>
+      <p>Réponse garantie sous 48 heures</p>
+    </div>
+  </section>
+
+  <!-- Clients -->
+  <section>
+    <div class="clients">
+      <h1>Nos clients</h1>
+      <h3>Ils nous ont choisi, nous font confiance, et ils ont raison. Serez-vous le prochain ?</h3>
+      <div class="row text-center mt-5">
+        <div class="col">
+          <a href="">
+            <img src="../public/img/clients/alchemy.png" alt="alchemy" title="Voir le projet du restaurant Alchemy" class="img-fluid">
+          </a>
+        </div>
+        <div class="col">
+          <a href="">
+            <img src="../public/img/clients/di.png" alt="dragon-i" title="Voir le projet du Dragon-i" class="img-fluid">
+          </a>
+        </div>
+        <div class="col">
+          <a href="">
+            <img src="../public/img/clients/timecrafters.png" alt="timecrafters" title="Voir le projet de TimeCrafters" class="img-fluid">
+          </a>
+        </div>
+        <div class="col">
+          <a href="">
+            <img src="../public/img/clients/paul.png" alt="paul" title="Voir le projet de Paul" class="img-fluid">
+          </a>
+        </div>
+        <div class="col">
+          <a href="">
+            <img src="../public/img/clients/pastis.png" alt="pastis" title="Voir le projet du Pastis" class="img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="row text-center mt-5">
+        <div class="col">
+          <a href="">
+            <img src="../public/img/clients/ashtari.png" alt="ashtari" title="Voir le projet de Ashtari" class="img-fluid">
+          </a>
+        </div>
+        <div class="col">
+          <a href="">
+            <img src="../public/img/clients/dragonfly.png" alt="dragonfly" title="Voir le projet de Dragonfly Group" class="img-fluid">
+          </a>
+        </div>
+        <div class="col">
+          <a href="">
+            <img src="../public/img/clients/arrakis.png" alt="arrakis" title="Voir le projet de Arrakis" class="img-fluid">
+          </a>
+        </div>
+        <div class="col">
+          <a href="">
+            <img src="../public/img/clients/hm.png" alt="hm" title="Voir le projet de H&M" class="img-fluid">
+          </a>
+        </div>
+        <div class="col">
+          <a href="">
+            <img src="../public/img/clients/socrate.png" alt="socrate" title="Voir le projet de Socrate" class="img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="row text-center mt-5">
+        <div class="col">
+          <a href="">
+            <img src="../public/img/clients/olivier.png" alt="olivier" title="Voir le projet d'Olivier Yoan" class="img-fluid">
+          </a>
+        </div>
+        <div class="col">
+          <a href="">
+            <img src="../public/img/clients/neoma.png" alt="neoma" title="Voir le projet de Neoma" class="img-fluid">
+          </a>
+        </div>
+        <div class="col">
+          <a href="">
+            <img src="../public/img/clients/laduree.png" alt="laduree" title="Voir le projet de Ladurée" class="img-fluid">
+          </a>
+        </div>
+        <div class="col">
+          <a href="">
+            <img src="../public/img/clients/palazzari.png" alt="palazzari" title="Voir le projet de Palazzari" class="img-fluid">
+          </a>
+        </div>
+        <div class="col">
+          <a href="">
+            <img src="../public/img/clients/douet.png" alt="douet" title="Voir le projet de Douet" class="img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="button">
+        <button type="button">
+          <i class="fas fa-angle-right"></i>
+          <span class="onButton">Je veux être le prochain client</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div>
+      <h1>Ils nous ont fait confiance</h1>
+      <h3>
+        Des rencontres, des idées, des projets réalisés. Des clients tout simplement heureux. Mais ne nous croyez pas sur parole.
+        Lisez plutôt leurs témoignages.
+      </h3>
+    </div>
+  </section>
+
+  <script src="../public/js/fontawesome-all.min.js"></script>
 </body>
 
 </html>
